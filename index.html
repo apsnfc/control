@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Jquery ile sayfa içinde arama yapmak</title>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<input type="text" autocomplete="off" name="searchTags" id="searchTags" placeholder="Aranacak Kelime" />
+
+<ul id="menuFull">
+<li>Anasayfa</li>
+<li>Apple iPhone SE</li>
+<li>Apple iPhone 14</li>
+<li>Apple iPhone 14 Pro</li>
+<li>Apple iPhone 14 Plus</li>
+<li>Apple iPhone 14 Pro Max</li>
+<li>Apple iPhone 13 Pro Max</li>
+<li>Apple iPhone 13 Pro</li>
+<li>Apple iPhone 13 Mini</li>
+<li>Apple iPhone 13</li>
+<li>Apple iPhone 12 Pro Max</li>
+<li>Apple iPhone 12 Pro</li>
+<li>Apple iPhone 12 Mini</li>
+<li>Apple iPhone 12</li>
+<li>Apple iPhone 11 Pro</li>
+<li>Apple iPhone 11</li>
+<li>Apple Iphone 8</li>
+<li>Apple Iphone 8 Plus</li>
+<li>Apple Iphone 7</li>
+<li>Apple Iphone 7 Plus</li>
+<li>Asus Zenfone 8</li>
+<li>Asus ROG Phone 5 Ultimate</li>
+<li>Asus ROG Phone 5s Pro</li>
+<li>Asus ROG Phone 5s</li>
+<li>Asus ROG Phone 5 Pro</li>
+<li>Asus ROG Phone 5</li>
+<li>Asus Zenfone 8 Flip</li>
+<li>Asus Zenfone 7 Pro</li>
+<li>Asus ROG Phone 3</li>
+<li>Asus ZenFone 6</li>
+<li>Cat S42 H+</li>
+<li>Cat S62 Pro</li>
+<li>Cat S42</li>
+<li>Cat S52</li>
+<li>Fairphone Fairphone 4</li>
+<li>Fairphone Fairphone 3+</li>
+<li>Fairphone Fairphone 3</li>
+<li>Google Pixel 6 Pro</li>
+<li>Google Pixel 6</li>
+<li>Google Pixel 5</li>
+<li>Google Pixel 4a 5G</li>
+<li>Google Pixel 4a</li>
+<li>Google Pixel 4 XL</li>
+<li>Google Pixel 4</li>
+<li>Google Pixel 3a XL</li>
+<li>Google Pixel 3a</li>
+<li>HTC Desire 22 Pro</li>
+<li>HTC Desire 21 Pro 5G</li>
+<li>HTC Desire 20 Pro</li>
+<li>HTC U20 5G</li>
+<li>HTC Desire 20+</li>
+<li>Motorola Moto G41</li>
+<li>Motorola Edge X30</li>
+<li>Motorola Moto G31</li>
+<li>Motorola Moto G71 5G</li>
+<li>Motorola Moto G51 5G</li>
+<li>Motorola Edge 20 Pro</li>
+<li>Motorola Edge (2021)</li>
+<li>Motorola Moto G60</li>
+<li>Motorola Moto G40 Fusion</li>
+<li>Motorola Moto G20</li>
+<li>Motorola Moto G50</li>
+<li>Motorola Edge S</li>
+<li>Motorola One 5G Ace</li>
+<li>Motorola Moto G200 5G</li>
+<li>Motorola Edge 20 Fusion</li>
+<li>Motorola Edge 20</li>
+<li>Motorola Moto G30</li>
+<li>Motorola Moto G100</li>
+<li>Motorola Moto G9 Play</li>
+<li>Motorola Moto G9 Power</li>
+<li>Motorola Moto G9 Plus</li>
+<li>Motorola Edge+</li>
+<li>Motorola Razr 5G</li>
+<li>Motorola Moto G 5G Plus</li>
+<li>Motorola Moto G 5G</li>
+<li>Motorola Edge</li>
+<li>Motorola One Vision</li>
+<li>Motorola Moto G8 Plus</li>
+<li>Motorola Moto G7</li>
+<li>Motorola One Zoom</li>
+<li>Motorola Moto G7 Power</li>
+<li>Motorola Moto G7 Plus</li>
+<li>Motorola One Action</li>
+<li>Nokia G11</li>
+<li>Nokia G21</li>
+<li>Nokia X100</li>
+<li>Nokia XR20</li>
+<li>Nokia X10</li>
+<li>Nokia G300</li>
+<li>Nokia G50</li>
+<li>Nokia X20</li>
+<li>Nokia G20</li>
+<li>Nokia 5,4</li>
+<li>Nokia 8.3 5G</li>
+<li>Nokia 8 V 5G UW</li>
+<li>Nokia 5,3</li>
+<li>Nokia 3,4</li>
+<li>Nokia 7,2</li>
+<li>Oppo Reno 7 Z</li>
+<li>Oppo Find N</li>
+<li>Oppo Reno 7</li>
+<li>Oppo Reno 8</li>
+<li>Oppo Reno 8 Pro+</li>
+<li>Oppo Find X5 Lite</li>
+<li>Oppo A77</li>
+<li>Oppo Reno 8 Pro</li>
+<li>Oppo Find X5 Pro</li>
+<li>Oppo Reno 7 Pro</li>
+<li>Oppo A55</li>
+<li>Oppo A54</li>
+<li>Oppo Find X3</li>
+<li>Oppo Find X5</li>
+<li>Oppo Find X3 Pro</li>
+<li>Oppo Reno 6 Pro+</li>
+<li>Oppo Reno 6</li>
+<li>Oppo Reno 5 Lite</li>
+<li>Oppo A74</li>
+<li>Oppo A16s</li>
+<li>Oppo Find X3 Lite</li>
+<li>Oppo A94</li>
+<li>Oppo K9</li>
+<li>Oppo Reno 5Z</li>
+<li>Oppo Reno 6 Pro</li>
+<li>Oppo Find X2</li>
+<li>Oppo A72</li>
+<li>Oppo Reno 2</li>
+<li>Oppo Reno 5</li>
+<li>Oppo Reno 4 Lite</li>
+<li>Oppo Reno 4 Z</li>
+<li>Oppo Reno 2Z</li>
+<li>Oppo Reno 5 Pro</li>
+<li>Oppo A9</li>
+<li>Oppo Reno Ace 2</li>
+<li>Oppo A72</li>
+<li>Oppo A5</li>
+<li>Oppo Reno 2</li>
+<li>Oppo Reno 4</li>
+<li>Oppo Reno 4 Pro</li>
+<li>Oppo Reno 5 Marvel</li>
+<li>Oppo A73</li>
+<li>Oppo A52</li>
+<li>Oppo Find X2 Pro</li>
+<li>Oppo K7</li>
+<li>Oppo Reno 4 Z</li>
+<li>Oppo Reno 5 Pro+</li>
+<li>Oppo Reno Z</li>
+<li>Oppo K5</li>
+<li>Oppo Reno 3 Pro</li>
+<li>Oppo Reno 10x Zoom</li>
+<li>Oppo Reno 2 Z</li>
+<li>Oppo A91</li>
+<li>Oppo Reno 3</li>
+<li>Oppo Reno</li>
+<li>Oppo RX17 Pro</li>
+<li>Oppo R17 Pro</li>
+<li>Oppo R17</li>
+<li>Oppo Find 7</li>
+<li>Samsung Galaxy S21 FE 5G</li>
+<li>Samsung Galaxy S22 5G</li>
+<li>Samsung Galaxy S22 Ultra 5G</li>
+<li>Samsung Galaxy Z Fold4</li>
+<li>Samsung Galaxy A73 5G</li>
+<li>Samsung Galaxy S22 Plus</li>
+<li>Samsung Galaxy S21 5G</li>
+<li>Samsung Galaxy A53 5G</li>
+<li>Samsung Galaxy M52 5G</li>
+<li>Samsung Galaxy Quantum 2</li>
+<li>Samsung Galaxy A72</li>
+<li>Samsung Galaxy A52 5G</li>
+<li>Samsung Galaxy A52</li>
+<li>Samsung Galaxy M62</li>
+<li>Samsung Galaxy A32</li>
+<li>Samsung Galaxy S21 Ultra 5G</li>
+<li>Samsung Galaxy Z Flip4</li>
+<li>Samsung Galaxy Z Flip3 5G</li>
+<li>Samsung Galaxy Z Fold3 5G</li>
+<li>Samsung Galaxy Note 20</li>
+<li>Samsung Galaxy M51</li>
+<li>Samsung Galaxy S20 Ultra 5G</li>
+<li>Samsung Galaxy S20 FE 5G</li>
+<li>Samsung Galaxy S20 FE</li>
+<li>Samsung Galaxy S20</li>
+<li>Samsung Galaxy Z Flip</li>
+<li>Samsung Galaxy Note 20 Ultra 5G</li>
+<li>Samsung Galaxy Note 20 Ultra</li>
+<li>Samsung Galaxy Note 20 5G</li>
+<li>Samsung Galaxy Note 10+</li>
+<li>Samsung Galaxy Note 10</li>
+<li>Samsung Galaxy S10+</li>
+<li>Samsung Galaxy S10</li>
+<li>Samusng Galaxy S22+ 5G</li>
+<li>Samusng Galaxy XCover Pro</li>
+<li>Sony Xperia 1 IV</li>
+<li>Sony Xperia 5 IV</li>
+<li>Sony Xperia Pro-I</li>
+<li>Sony Xperia 1 III</li>
+<li>Sony Xperia 10 III</li>
+<li>Sony Xperia 10 III Lite</li>
+<li>Sony Xperia Pro</li>
+<li>Sony Xperia 5 III</li>
+<li>Sony Xperia 5 II</li>
+<li>Sony Xperia 1 II</li>
+<li>Sony Xperia 10 II</li>
+<li>Sony Xperia L4</li>
+<li>Sony Xperia 5</li>
+<li>Sony Xperia 1</li>
+<li>Sony Xperia 10</li>
+<li>Xiaomi 12T 2022</li>
+<li>Xiaomi Redmi Note 11</li>
+<li>Xiaomi Redmi Note 11 Pro</li>
+<li>Xiaomi Redmi Note 11 Pro Plus</li>
+<li>Xiaomi Redmi Note 11S</li>
+<li>Xiaomi Pocox4 Pro 5G</li>
+<li>Xiaomi Poco X4 GT</li>
+<li>Xiaomi Redmi Note 10 Pro</li>
+<li>Xiaomi Redmi Note 10 Pro Max</li>
+<li>Xiaomi 11T Pro</li>
+<li>Xiaomi Mi 11 Lite</li>
+<li>Xiaomi Mi 9T Pro</li>
+<li>Xiaomi Mi 9</li>
+<li>Xiaomi Mi 9 SE</li>
+<li>Xiaomi Redmi Note 8 Pro</li>
+<li>Xiaomi Mi Note 10</li>
+<li>Xiaomi Mi 9T</li>
+<li>Xiaomi Mi 9 Lite</li>
+<li>Xiaomi Redmi Note 8T</li>
+<li>Xiaomi Mi 8</li>
+<li>Xiaomi Mi Mix 2s</li>
+</ul>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
